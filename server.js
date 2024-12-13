@@ -12,7 +12,7 @@ const RANGE = 'don_hang!A:CS'; // Phạm vi cột A đến CS
 const API_KEY = 'AIzaSyA9g2qFUolpsu3_HVHOebdZb0NXnQgXlFM';
 app.use(cors());
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/data', async (req, res) => {
     try {
